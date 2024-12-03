@@ -22,8 +22,8 @@ const Project = () => {
     <div id='Projects' className='p-4 md:p-24 text-white'>
       <h1 className='text-2xl md:text-4xl text-white font-bold'>Projects</h1>
       <div className='py-12 px-8 flex flex-wrap gap-5'>
-      {projectdetail.map((item) => 
-          <ProjectCard title={item.projectname} main={item.languageused} code={item.codelink}/>
+      {projectdetail.map((item, ind) => 
+          <ProjectCard key={ind} title={item.projectname} main={item.languageused} code={item.codelink}/>
         )}
       </div>
     </div>

@@ -1,5 +1,5 @@
 import Home from "./component/Home/Home"
-import Navbar from "./component/navbar"
+import Navbar from "./component/Navbar"
 import About from "./component/About/About"
 import Experience from "./component/Experience/Experience"
 import Project from "./component/Project/Project"

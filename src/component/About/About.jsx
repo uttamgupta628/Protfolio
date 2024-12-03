@@ -20,7 +20,7 @@ const About = () => {
       <div className='md:flex flex-wrap flex-col md:flex-row items-center'>
         <img className='md:h-80 mr-10' src={img2} alt="" />
         <ul>
-            {arr.map((item)=><div className='flex gap-3 py-4'>
+            {arr.map((item, ind)=><div key={ind} className='flex gap-3 py-4'>
                 <IoArrowForward size={30} className="mt-1"/>
                 <span className='w-96'>
                   <h1 className='text-xl md:text-2xl fonto-semibold leading-normal'>{item.name}</h1>
